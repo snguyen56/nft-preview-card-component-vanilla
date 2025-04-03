@@ -121,7 +121,7 @@ p {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-@media screen and (min-width: 736px) {
+@media screen and (min-width: 400px) {
   .card {
     width: 349px;
     height: 595px;
@@ -130,5 +130,21 @@ p {
   .img-container {
     width: 300px;
     height: 300px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 18px;
+    margin-bottom: 22px;
+  }
+  .nft-info {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .card-footer {
+    align-items: center;
+  }
+  .card-footer p {
+    font-size: 16px;
   }
 }
