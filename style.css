@@ -27,6 +27,7 @@ main {
   padding: 24px;
 }
 .img-container {
+  position: relative;
   flex-shrink: 0;
   width: 278px;
   height: 278px;
@@ -35,6 +36,25 @@ main {
 }
 img {
   width: inherit;
+}
+.active-logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(178, 100%, 50%, 50%);
+  display: grid;
+  place-items: center;
+  visibility: hidden;
+}
+.img-container:hover .active-logo {
+  visibility: visible;
+  cursor: pointer;
+}
+.active-logo img {
+  width: 50px;
+  opacity: 100%;
 }
 h1,
 .author-name {
@@ -76,13 +96,6 @@ p {
 .time-section span {
   flex-shrink: 0;
 }
-/* .divider {
-  height: 1px;
-  width: 100%;
-  background-color: hsl(215, 32%, 27%);
-  margin-top: 16px;
-  z-index: 999;
-} */
 .card-footer {
   display: flex;
   align-items: start;
@@ -107,4 +120,15 @@ p {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+@media screen and (min-width: 736px) {
+  .card {
+    width: 349px;
+    height: 595px;
+  }
+
+  .img-container {
+    width: 300px;
+    height: 300px;
+  }
 }
