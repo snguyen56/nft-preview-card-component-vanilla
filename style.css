@@ -1,11 +1,20 @@
+@font-face {
+  font-family: "Outfit";
+  src: url(assets/fonts/Outfit-VariableFont_wght.ttf) format(truetype)
+      tech(variations),
+    url(assets/fonts/Outfit-VariableFont_wght.ttf) format(truetype-variations);
+}
+html {
+  font-size: 18px;
+  font-family: "Outfit";
+  color: hsl(215, 51%, 70%);
+}
 main {
   display: grid;
   place-items: center;
   height: 100vh;
   width: 100vw;
   background-color: hsl(217, 54%, 11%);
-  color: hsl(215, 51%, 70%);
-  font-size: 18px;
 }
 .card {
   width: 326px;
