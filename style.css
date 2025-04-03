@@ -11,6 +11,7 @@ html {
   color: hsl(215, 51%, 70%);
 }
 main {
+  position: relative;
   display: grid;
   place-items: center;
   height: 100vh;
@@ -115,6 +116,8 @@ p {
   border-radius: 50%;
 }
 .attribution {
+  position: absolute;
+  top: 625px;
   font-size: 11px;
   text-align: center;
 }
@@ -146,5 +149,8 @@ p {
   }
   .card-footer p {
     font-size: 16px;
+  }
+  .attribution {
+    top: 650px;
   }
 }
